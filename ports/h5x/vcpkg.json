@@ -1,0 +1,42 @@
+{
+  "name": "h5x",
+  "version": "0.0.4",
+  "description": "h5x",
+  "homepage": "https://github.com/serge-klim/h5x",
+  "license": "BSL-1.0",
+  "dependencies": [
+    "boost-describe",
+    "boost-format",
+    "boost-fusion",
+    "boost-iterator",
+    "boost-range",
+    {
+      "name": "hdf5",
+      "features": [
+        "cpp"
+      ]
+    },
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "features": {
+    "tests": {
+      "description": "Build tests",
+      "dependencies": [
+        "boost-test"
+      ]
+    },
+    "tools": {
+      "description": "Build tools",
+      "dependencies": [
+        "boost-program-options"
+      ]
+    }
+  }
+}
