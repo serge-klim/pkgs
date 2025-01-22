@@ -1,0 +1,30 @@
+{
+  "name": "transcoder",
+  "version": "0.0.1",
+  "description": "transcoder",
+  "homepage": "https://github.com/serge-klim/transcoder",
+  "license": "BSL-1.0",
+  "dependencies": [
+    "boost-describe",
+    "boost-endian",
+    "boost-fusion",
+    "boost-mp11",
+    "boost-type-index",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "features": {
+    "tests": {
+      "description": "Build tests",
+      "dependencies": [
+        "boost-test"
+      ]
+    }
+  }
+}
