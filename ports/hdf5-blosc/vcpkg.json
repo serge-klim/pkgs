@@ -1,0 +1,19 @@
+{
+  "name": "hdf5-blosc",
+  "version": "1.0.1",
+  "description": "This is a filter for HDF5 that uses the Blosc compressor; by installing this filter, you can read and write HDF5 files with Blosc-compressed datasets.",
+  "homepage": "https://github.com/Blosc/hdf5-blosc/",
+  "license": "BSD-3-Clause",
+  "dependencies": [
+    "blosc",
+    "hdf5",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

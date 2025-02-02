@@ -1,5 +1,9 @@
 {
-  "default": {
+ "default": {
+    "hdf5-blosc": {
+      "baseline": "1.0.1",
+      "port-version": 0
+    },        
     "h5x": {
       "baseline": "0.0.4",
       "port-version": 0

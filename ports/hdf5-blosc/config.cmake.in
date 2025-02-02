@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include (CMakeFindDependencyMacro)
+
+find_dependency (hdf5 CONFIG REQUIRED)
+find_dependency (blosc CONFIG REQUIRED)
+
+include(${CMAKE_CURRENT_LIST_DIR}/hdf5_blosc-targets.cmake)
+check_required_components(hdf5_blosc)
